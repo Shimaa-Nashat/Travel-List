@@ -23,7 +23,7 @@ export default function App() {
       <Logo />
       <Form onAddItem ={handleAddItem}/>
       <PackingList onDeleteItem={handleDeleteItem} onPackedItem={handlePackedItem} items={items}/>
-      <Stats />
+      <Stats items={items} />
     </section>
   );
 }
@@ -101,10 +101,16 @@ function Item({ item ,onDeleteItem,onPackedItem}) {
   );
 }
 
-function Stats() {
+function Stats({ items }) {
+  const packedItems = items.filter((item) => item.packed === true);
+
   return (
     <footer className="stats">
-      <em>💼 You have X items on your list, and you already packed X (X%).</em>
+      <em>
+        💼 You have {items.length} items on your list, and you already packed{" "}
+        {packedItems.length} (
+        {Math.floor((packedItems.length / items.length) * 100)}%).
+      </em>
     </footer>
   );
 }
