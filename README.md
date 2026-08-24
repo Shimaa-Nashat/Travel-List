@@ -72,12 +72,6 @@ npm install
 npm start
 ```
 
-The application will open in your browser at:
-
-```text
-http://localhost:3000
-```
-
 ## 📖 How to Use
 
 1. Enter the item you want to take with you.
