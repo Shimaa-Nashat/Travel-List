@@ -3,7 +3,7 @@
 A simple and interactive **Travel List** web application built with **React.js**.
 It helps you organize the items you need to pack before traveling and keeps track of what has already been packed.
 
-[## 🌐 Live Demo](https://travel-list-five-amber.vercel.app/)
+[🌐 Live Demo](https://travel-list-five-amber.vercel.app/)
 ## 🚀 Features
 
 * ➕ Add items to your travel packing list
