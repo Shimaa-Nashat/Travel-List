@@ -5,9 +5,7 @@ It helps you organize the items you need to pack before traveling and keeps trac
 
 ## 🌐 Live Demo
 
-Add your deployed project link here:
-
-`https://travel-list-five-amber.vercel.app/`
+[View Live Demo](https://travel-list-five-amber.vercel.app/)
 
 ## 🚀 Features
 
