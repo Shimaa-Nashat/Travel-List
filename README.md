@@ -148,14 +148,4 @@ const packedItems = items.filter((item) => item.packed === true);
 
 **Shimaa Nashat**
 
-Frontend Web Developer | React.js
-
-### GitHub
-
-Add your GitHub profile here:
-
-`https://github.com/Shimaa-Nashat`
-
----
-
 ⭐ If you like this project, consider giving it a star!
