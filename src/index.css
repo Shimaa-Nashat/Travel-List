@@ -117,7 +117,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--ink-faint);
-  margin: 0.9rem 0 0.4rem 0;
+  margin-bottom: 0.4rem;
 }
 
 button,
@@ -206,6 +206,33 @@ select {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.2rem;
   align-content: start;
+  max-height: 48rem;
+  overflow-y: auto;
+  padding-right: 0.6rem;
+}
+
+/* custom scrollbar so it matches the dark UI instead of the OS default */
+.list ul::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.list ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list ul::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 1rem;
+}
+
+.list ul::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
+}
+
+@media (min-width: 1024px) {
+  .list ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .list li {
@@ -295,6 +322,7 @@ input[type="checkbox"]:checked::after {
 .actions select {
   font-family: var(--font-mono);
   font-size: 1.2rem;
+  background-color: transparent;
 }
 
 .actions button {
